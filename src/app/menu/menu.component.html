@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <span>Menu</span>
+</mat-toolbar>
+<mat-selection-list [multiple]="false">
+  <mat-list-option
+    [routerLinkActive]="'active'"
+    [routerLinkActiveOptions]="{ exact: true }"
+    [routerLink]="['']">
+    New invoice
+  </mat-list-option>
+  <mat-list-option
+    [routerLinkActive]="'active'"
+    [routerLink]="['preview']">
+    Preview invoice
+  </mat-list-option>
+</mat-selection-list>
