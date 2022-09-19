@@ -1,0 +1,17 @@
+.example-form {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inputs {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.submit-button{
+  margin: 10px;
+}

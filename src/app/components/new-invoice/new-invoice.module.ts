@@ -7,6 +7,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 import {NewInvoiceRoutingModule} from "./new-invoice-routing.module";
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 
@@ -20,6 +21,7 @@ import {NewInvoiceRoutingModule} from "./new-invoice-routing.module";
     MatIconModule,
     MatButtonModule,
     MatInputModule,
+    MatSnackBarModule
   ]
 })
 export class NewInvoiceModule { }

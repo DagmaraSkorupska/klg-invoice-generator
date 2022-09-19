@@ -8,8 +8,9 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {BrowserModule} from "@angular/platform-browser";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CompanyService} from "./services/company.service";
-import {InvoiceService} from "./services/invoice.service";
 import {HttpClientModule} from "@angular/common/http";
+import {MatButtonModule} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -22,11 +23,12 @@ import {HttpClientModule} from "@angular/common/http";
     MatSidenavModule,
     MenuModule,
     MatToolbarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [
-    CompanyService,
-    InvoiceService],
+    CompanyService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

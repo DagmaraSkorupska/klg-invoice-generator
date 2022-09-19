@@ -1,9 +1,20 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" opened>
+  <mat-sidenav #drawer
+               fixedInViewport
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]="(isHandset$ | async) === false">
     <app-menu></app-menu>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
+      <button
+        mat-icon-button
+        aria-label="Sidenav toggle icon"
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon>menu</mat-icon>
+      </button>
       <span>KLG Invoice generator</span>
     </mat-toolbar>
     <main style="padding: 1rem">

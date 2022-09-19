@@ -5,14 +5,14 @@ const routes: Routes = [
   {
     path:'',
     loadChildren: () =>
-      import('./new-invoice/new-invoice.module').then(
+      import('./components/new-invoice/new-invoice.module').then(
         (m) => m.NewInvoiceModule
       ),
   },
   {
     path:'preview',
     loadChildren: () =>
-      import('./preview-invoice/preview-invoice.module').then(
+      import('./components/preview-invoice/preview-invoice.module').then(
         (m) => m.PreviewInvoiceModule
       ),
   }
